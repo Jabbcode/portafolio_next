@@ -1,4 +1,6 @@
 import { Metadata } from "next"
+import Image from 'next/image'
+
 import { Open_Sans } from 'next/font/google';
 
 export const metadata: Metadata = {
@@ -22,8 +24,7 @@ export default function Home() {
   return (
     <main className="container">
       <div className={inter.className}>
-        <h1>¿Sabes que eres el amor de mi vida?</h1>
-        <h2>💖 El amor precioso de mi corazon 💖</h2>
+        <Image src="/assets/building-site-construction-png.png" alt="imagen de contruccion" width={760} height={480} />
       </div>
     </main>
   )
